@@ -295,7 +295,7 @@ class HelpCog(commands.Cog, name="Ajuda"):
             description=txt.replace(ctx.me.mention, f"@{ctx.me.display_name}").replace(f"<@!{ctx.bot.user.id}>",
                                                                                        f"@{ctx.me.display_name}"),
             color=self.bot.get_color(ctx.guild.me))
-        embed.set_author(name=f"Menu de ajuda - Lista de comandos (prefix)",
+        embed.set_author(name=f"Music Bot Help Panel..!",
                          icon_url=self.bot.user.display_avatar.replace(static_format="png").url)
 
         try:
@@ -304,7 +304,7 @@ class HelpCog(commands.Cog, name="Ajuda"):
             owner = self.bot.appinfo.owner
 
         embed.set_footer(icon_url=owner.display_avatar.replace(static_format="png").url,
-                         text=f"Dono(a): {owner} [{owner.id}]")
+                         text=f" {owner} [{owner.id}]")
 
         view = ViewHelp(ctx, btn_id, get_cmd=self.get_cmd, cmd_list=cmd_lst_new, category_cmd=None,
                  main_embed=embed, timeout=180)
