@@ -45,13 +45,13 @@ class ViewHelp(disnake.ui.View):
 
             b = disnake.SelectOption(
                 label=category, value=category, emoji=emoji, default=category == self.category,
-                description="Ver detalhes dos comandos desta categoria."
+                description="See all Commands in Details."
             )
 
             options.append(b)
 
         if options:
-            sel = disnake.ui.Select(placeholder='Escolha uma categoria para ver todos os comandos:', options=options)
+            sel = disnake.ui.Select(placeholder=' 👀 | Click to See All Commands ', options=options)
             sel.callback = self.callback_help
             self.add_item(sel)
 
