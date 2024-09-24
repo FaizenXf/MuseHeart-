@@ -288,8 +288,8 @@ class HelpCog(commands.Cog, name="Ajuda"):
             lst.append(f"\n\n**{data['emoji']} ⠂{category} ({n} comando{'s' if n > 1 else ''}):**\n`{cmds}`")
 
         txt = f"{''.join(lst)}\n\n" \
-              "Para obter informações de um comando diretamente, use: \n" \
-              f"`{ctx.prefix}{ctx.invoked_with} <comando/alias>`"
+              "for more information, use  \n" \
+              f"```{ctx.prefix}{ctx.invoked_with} <command/alias>```"
 
         embed = disnake.Embed(
             description=txt.replace(ctx.me.mention, f"@{ctx.me.display_name}").replace(f"<@!{ctx.bot.user.id}>",
