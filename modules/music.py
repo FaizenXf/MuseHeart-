@@ -46,7 +46,7 @@ sc_recommended = re.compile(r"https://soundcloud\.com/.*/recommended$")
 class Music(commands.Cog):
 
     emoji = "🎶"
-    name = "Música"
+    name = "Músic"
     desc_prefix = f"[{emoji} {name}] | "
 
     playlist_opts = [
