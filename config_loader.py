@@ -12,9 +12,9 @@ bools = {
 }
 
 DEFAULT_CONFIG = {
-    "DEFAULT_PREFIX": "!!",
+    "DEFAULT_PREFIX": ".",
     "AUTO_SYNC_COMMANDS": True,
-    "OWNER_IDS": "",
+    "OWNER_IDS": "963354050617815060",
     "COMMAND_LOG": False,
     "EMBED_COLOR": None,
     "BOT_ADD_REMOVE_LOG": '',
