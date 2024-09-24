@@ -217,7 +217,7 @@ class HelpCog(commands.Cog, name="Ajuda"):
             if t:
                 txt += ("🚩 **⠂Flags `(opções para adicionar no final do comando)`:**```ini\n" + "\n\n".join(t) + "```")
 
-        embed.set_author(name="Menu de ajuda - Lista de comandos (prefix)", icon_url=self.bot.user.display_avatar.url)
+        embed.set_author(name="Music Bot Help Panel..!", icon_url=self.bot.user.display_avatar.url)
 
         embed.description = txt
 
