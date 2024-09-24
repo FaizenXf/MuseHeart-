@@ -116,13 +116,13 @@ def parse_error(
                     "**Gerenciar canais** para pular músicas.**"
 
     elif isinstance(error, DiffVoiceChannel):
-        error_txt = "**Você deve estar no meu canal de voz atual para usar esse comando.**"
+        error_txt = "**You must be on my current voice channel to use this command**"
 
     elif isinstance(error, NoSource):
         error_txt = "**Não há músicas no player atualmente.**"
 
     elif isinstance(error, NoVoice):
-        error_txt = "**Você deve entrar em um canal de voz para usar esse comando.**"
+        error_txt = "**You must join a voice channel to use this command.**"
 
     elif isinstance(error, NoPlayer):
         try:
