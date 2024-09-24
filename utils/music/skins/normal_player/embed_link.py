@@ -84,17 +84,17 @@ class EmbedLinkSkin:
                 min_values=0, max_values=1,
                 options=[
                     disnake.SelectOption(
-                        label="Adicionar música", emoji="<:add_music:588172015760965654>",
+                        label="Add Music", emoji="<:add_music:588172015760965654>",
                         value=PlayerControls.add_song,
                         description="Adicionar uma música/playlist na fila."
                     ),
                     disnake.SelectOption(
-                        label="Adicionar favorito na fila", emoji="⭐",
+                        label="Add Favorite to Queue", emoji="⭐",
                         value=PlayerControls.enqueue_fav,
                         description="Adicionar um de seus favoritos na fila."
                     ),
                     disnake.SelectOption(
-                        label="Adicionar nos seus favoritos", emoji="💗",
+                        label="Add to Favorites ", emoji="💗",
                         value=PlayerControls.add_favorite,
                         description="Adicionar a música atual nos seus favoritos."
                     ),
