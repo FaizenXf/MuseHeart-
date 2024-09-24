@@ -66,7 +66,7 @@ class ViewHelp(disnake.ui.View):
                 right_button.callback = self.callback_right
                 self.add_item(right_button)
 
-            back_button = disnake.ui.Button(style=disnake.ButtonStyle.grey, emoji='<:leftwards_arrow_with_hook:868761137703964692>', custom_id="back_page", label="Voltar")
+            back_button = disnake.ui.Button(style=disnake.ButtonStyle.grey, emoji='<:leftwards_arrow_with_hook:868761137703964692>', custom_id="back_page", label="All Commands")
             back_button.callback = self.callback_back
             self.add_item(back_button)
 
@@ -173,18 +173,18 @@ class HelpCog(commands.Cog, name="Ajuda"):
 
         embed = disnake.Embed(color=self.bot.get_color(ctx.guild.me))
 
-        txt = f"### ⌨️ ⠂Comando: {ctx.prefix}{cmd}\n```\n{help_cmd}```\n"
+        txt = f"### ⌨️ ⠂Command: {ctx.prefix}{cmd}\n```\n{help_cmd}```\n"
         if cmd.aliases:
             aliases = " | ".join([f"{ctx.prefix}{ali}" for ali in cmd.aliases])
-            txt += f"🔄 **⠂Alternativas:** ```\n{aliases}```\n"
+            txt += f"🔄 **⠂Aliases:** ```\n{aliases}```\n"
         if hasattr(cmd, 'commands'):
             subs = " | ".join([c.name for c in cmd.commands if (await check_perms(ctx, c))])
             txt += f"🔢 **⠂Subcomandos:** ```{subs}``` Use o comando: `[ {ctx.prefix}help {cmd} subcomando ]` para ver mais detalhes do subcomando.\n\n"
 
         if usage_cmd:
-            txt += f"📘 **⠂Como Usar:** ```\n{usage_cmd}```\n" \
-                   f"⚠️ **⠂Notas sobre o uso dos argumentos no comando:** ```\n" \
-                   f"[] = Obrigatório | <> = Opcional```\n"
+            txt += f"📘 **⠂how to use:** ```\n{usage_cmd}```\n" \
+                   f"⚠️ **⠂Command Arguments :** ```\n" \
+                   f"[] = Required | <> = Optional```\n"
 
         flags = cmd.extras.get("flags")
 
