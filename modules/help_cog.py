@@ -288,7 +288,7 @@ class HelpCog(commands.Cog, name="Ajuda"):
             lst.append(f"\n\n**{data['emoji']} ⠂{category} ({n} comando{'s' if n > 1 else ''}):**\n`{cmds}`")
 
         txt = f"{''.join(lst)}\n\n" \
-              "# for more information, use  \n" \
+              "## for more information, use  \n" \
               f"```{ctx.prefix}{ctx.invoked_with} <command/alias>```"
 
         embed = disnake.Embed(
