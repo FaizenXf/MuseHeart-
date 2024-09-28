@@ -285,10 +285,10 @@ class HelpCog(commands.Cog, name="Ajuda"):
 
             cmds = ', '.join([c.name for c in sorted(data['cmds'], key=lambda c: c.name)])
             n = len(data['cmds'])
-            lst.append(f"\n\n**{data['emoji']} ⠂{category} ({n} comando{'s' if n > 1 else ''}):**\n`{cmds}`")
+            lst.append(f"\n\n**{data['emoji']} ⠂{category} ({n} command{'s' if n > 1 else ''}):**\n`{cmds}`")
 
         txt = f"{''.join(lst)}\n\n" \
-              "[### FOR MORE INFORMATION, USE](https://guns.lol/Faizen.Sosuke)\n" \
+              "### [FOR MORE INFORMATION, USE](https://guns.lol/Faizen.Sosuke)\n" \
               f"```{ctx.prefix}{ctx.invoked_with} <command/alias>```"
 
         embed = disnake.Embed(
