@@ -359,7 +359,7 @@ class HelpCog(commands.Cog, name="Ajuda"):
                 index = 0
         else:
             cog = ctx.bot.get_cog(cmd.cog_name)
-            name = cog.name if hasattr(cog, "name") else "Diversos"
+            name = cog.name if hasattr(cog, "name") else "Utility"
             emoji = cog.emoji if hasattr(cog, "emoji") else "🔰"
 
             cmds = [c for c in sorted(cog.get_commands(), key=lambda cm: cm.name) if await check_perms(ctx, c) or not c.hidden]
