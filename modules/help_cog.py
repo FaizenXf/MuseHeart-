@@ -260,7 +260,7 @@ class HelpCog(commands.Cog, name="Ajuda"):
 
             elif not cmd.cog or not hasattr(cmd.cog, 'name') or len(cmd.cog.get_commands()) < 2:
                 if not "🔰" in cmdlst:
-                    cmdlst["🔰"] = ("Diversos", [])
+                    cmdlst["🔰"] = ("Utility", [])
                 cmdlst["🔰"][1].append(cmd)
 
             else:
@@ -304,7 +304,7 @@ class HelpCog(commands.Cog, name="Ajuda"):
             owner = self.bot.appinfo.owner
 
         embed.set_footer(icon_url=owner.display_avatar.replace(static_format="png").url,
-                         text=f" {owner} [{owner.id}]")
+                         text=f" .Help | Made With 💜 By FaizenSosuke")
 
         view = ViewHelp(ctx, btn_id, get_cmd=self.get_cmd, cmd_list=cmd_lst_new, category_cmd=None,
                  main_embed=embed, timeout=180)
