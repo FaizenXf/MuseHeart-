@@ -1714,7 +1714,7 @@ class MusicSettings(commands.Cog):
 class RPCCog(commands.Cog):
 
     emoji = "🔧"
-    name = "Configurações"
+    name = "Config"
     desc_prefix = f"[{emoji} {name}] | "
 
     def __init__(self, bot: BotCore):
