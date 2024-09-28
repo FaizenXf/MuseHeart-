@@ -292,7 +292,7 @@ class PlayerSettings(disnake.ui.View):
 class MusicSettings(commands.Cog):
 
     emoji = "🔧"
-    name = "Configurações"
+    name = "Config"
     desc_prefix = f"[{emoji} {name}] | "
 
     def __init__(self, bot: BotCore):
