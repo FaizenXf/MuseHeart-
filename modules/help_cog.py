@@ -229,7 +229,7 @@ class HelpCog(commands.Cog, name="Ajuda"):
 
         if (max_pages:=len(cmds)) > 1:
             embed.set_footer(icon_url=owner.display_avatar.replace(static_format="png"),
-                             text=f"Página: {index + 1} de {max_pages}")
+                             text=f"page : {index + 1} of {max_pages}")
         return embed
 
     @commands.cooldown(2, 5, commands.BucketType.user)
@@ -288,7 +288,7 @@ class HelpCog(commands.Cog, name="Ajuda"):
             lst.append(f"\n\n**{data['emoji']} ⠂{category} ({n} comando{'s' if n > 1 else ''}):**\n`{cmds}`")
 
         txt = f"{''.join(lst)}\n\n" \
-              "[**for more information, use**](https://guns.lol/Faizen.Sosuke)\n" \
+              "[### FOR MORE INFORMATION, USE](https://guns.lol/Faizen.Sosuke)\n" \
               f"```{ctx.prefix}{ctx.invoked_with} <command/alias>```"
 
         embed = disnake.Embed(
