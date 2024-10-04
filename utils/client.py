@@ -1171,6 +1171,8 @@ class BotCore(commands.AutoShardedBot):
                 embed.description += f"\n\nMy prefix for this  server is: " **{prefix}** "`(My mention also works as a Prefix).`\n"\
                                     f"to see all my commands , use  **{prefix}help | /help**"
 
+embed.description += "\n\n**Pra ver todos os meus comandos use: /**"
+
             
 
             kwargs = {
