@@ -1180,7 +1180,7 @@ embed.description += "\n\n**for more information , use : /**"
             kwargs = {
                 "components": [
                     disnake.ui.Button(
-                        label="Click Here to Join Support HQ.",
+                        label="Click Here to Add Meh.",
                         url=disnake.utils.oauth_url(self.user.id, permissions=disnake.Permissions(self.config['INVITE_PERMISSIONS']), scopes=('bot',))
                     )
                 ]
