@@ -1171,14 +1171,16 @@ class BotCore(commands.AutoShardedBot):
                 embed.description += f"\n\nMy prefix for this  server is: " **{prefix}** "`(My mention also works as a Prefix).`\n"\
                                     f"to see all my commands , use  **{prefix}help | /help**"
 
-embed.description += "\n\n**Pra ver todos os meus comandos use: /**"
+embed.description += "\n\n**for more information , use : /**"
+
+
 
             
 
             kwargs = {
                 "components": [
                     disnake.ui.Button(
-                        label="Me adicione no seu servidor.",
+                        label="Click Here to Join Support HQ.",
                         url=disnake.utils.oauth_url(self.user.id, permissions=disnake.Permissions(self.config['INVITE_PERMISSIONS']), scopes=('bot',))
                     )
                 ]
