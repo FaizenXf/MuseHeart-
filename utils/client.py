@@ -1165,13 +1165,13 @@ class BotCore(commands.AutoShardedBot):
             if not isinstance(prefix, str):
                 prefix = prefix[-1]
 
-            embed.description = f"**Olá {message.author.mention}.**"
+            embed.description = f"**Heyo !  {message.author.mention}.**"
 
             if not self.config["INTERACTION_COMMAND_ONLY"]:
-                embed.description += f"\n\nMeu prefixo no servidor é: **{prefix}** `(minha menção também funciona como prefixo).`\n"\
-                                    f"Pra ver todos os meus comandos use **{prefix}help**"
+                embed.description += f"\n\nMy prefix for this  server is: " **{prefix}** "`(My mention also works as a Prefix).`\n"\
+                                    f"to see all my commands , use  **{prefix}help | /help**"
 
-            embed.description += "\n\n**Pra ver todos os meus comandos use: /**"
+            
 
             kwargs = {
                 "components": [
