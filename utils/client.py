@@ -1168,10 +1168,9 @@ class BotCore(commands.AutoShardedBot):
             embed.description = f"**Heyo !  {message.author.mention}.**"
 
             if not self.config["INTERACTION_COMMAND_ONLY"]:
-                embed.description += f"\n\nMy prefix for this  server is: " **{prefix}** "`(My mention also works as a Prefix).`\n"\
+                embed.description += f"\n\nMy prefix for this  server is:  **{prefix}** `(My mention also works as a Prefix).`\n"\
                                     f"to see all my commands , use  **{prefix}help | /help**"
 
-embed.description += "\n\n**for more information , use : /**"
 
 
 
