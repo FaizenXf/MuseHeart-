@@ -188,8 +188,8 @@ def parse_error(
             commands.BucketType.default: f"this command has already been used {txt} by someone"
         }
 
-        error_txt = f"{ctx.author.mention} **{txt[error.per]} e ainda não teve seu{'s' if error.number > 1 else ''} " \
-                    f"uso{'s' if error.number > 1 else ''} finalizado{'s' if error.number > 1 else ''}!**"
+        error_txt = f"{ctx.author.mention} **{txt[error.per]} and you haven't had yours yet{'s' if error.number > 1 else ''} " \
+                    f"use{'s' if error.number > 1 else ''} finished{'s' if error.number > 1 else ''}!**"
 
     elif isinstance(error, TrackNotFound):
         error_txt = "There were no results for your search..."
